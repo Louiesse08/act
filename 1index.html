@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    
+    <style>
+        a:link{
+    background-color: rgb(252, 252, 252);
+    color: rgb(50, 150, 243);
+    }
+
+    a:hover{
+        background-color: rgb(202, 107, 90);
+        color: rgb(91, 160, 102);
+    }
+    
+    a:active{
+        background-color: pink;
+    }
+
+    ol{
+        list-style-type: upper-roman;
+    }
+
+    ul{
+        list-style-type: georgian;
+    } 
+    
+
+
+    ul{
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    }
+
+    ul li{
+        margin-right: 10px;
+    }
+
+    ul li:hover{
+        text-decoration: underline;
+    }
+
+    
+    ul li a{
+        text-decoration: none;
+        background: none;
+        border: none;
+
+        color: black;
+        margin: 0 40px 0 0;   
+    }
+
+    p{
+        counter-increment: numbering;
+        margin: 4px 25px;
+    }
+
+    p::before{
+        content: counter(numbering) ". ";
+    }
+
+    #home::before{
+        content: "\EE21";
+        font-family: remixicon !important;
+    }
+
+    .box{
+    width:600px;
+    height: 600px;   
+    border-width: 1px 3px 5px 2px;
+    border-style: solid double dotted dashed;
+    border-color: black red black green;
+    }
+
+
+    .boxes{
+    width:600px;
+    height: 600px;  
+    border: 1px solid black 3px double red 5px dotted black 2px dashed green;
+    }
+
+    </style>
+
+     <div><a href="">Click me!</a><br><br></div>
+    
+    <input type="button" value="Click me!"> <br><br><br>
+
+    <ul>
+        
+        <li><a id="home" href="home">Home</a></li>
+
+        <li><a id="about" href="about" ><i class="ri-book-open-fill"></i>About</a></li>
+
+        <li><a id="contact-us" href="contact us">Contact Us</a></li>
+
+    </ul>
+
+    <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ol>
+
+    <id>
+        <p id="p1">First paragraph.</p>
+        <p id="p2">Second paragraph.</p>
+        <p id="p3">Third paragraph.</p>
+    </id>
+
+
+
+    <div class="box"></div><br>
+    <div class="boxes"></div>
+   
+
+</body>
+</html>
